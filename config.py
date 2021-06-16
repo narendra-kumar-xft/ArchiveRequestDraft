@@ -1,0 +1,6 @@
+customhost = "nr171a1yb7ue50m.c0vudfhvuf6t.us-east-2.rds.amazonaws.com"
+customuser = "admin"
+custompass = "admin1234"
+customdb = "spartans"
+custombucket = ""
+customregion = "us-east-2"
