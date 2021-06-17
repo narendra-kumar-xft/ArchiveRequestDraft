@@ -114,12 +114,12 @@ th:hover {
 <form action="/viewSummary" autocomplete="on" method="POST" enctype="multipart/form-data">
     <table id="myTable">
         <tr>
-            <th style="cursor:default;">Contact Person / Requestor</th>
-            <th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(2)')">Name of the Application<i class="fa fa-sort"></i></th>
-            <th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(3)')">Product ID (As in Product Master Database)<i class="fa fa-sort"></i></th>
-            <th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(4)')">Team Name of Requestor<i class="fa fa-sort"></i></th>
-            <th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(5)')">How long until objects are transitioned to Glacier (In Days)<i class="fa fa-sort"></i></th>
-			<th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(6)')">Archive Retention period - How long before data is deleted from AWS (In Days)<i class="fa fa-sort"></i></th>
+            <th style="cursor:default;">Contact Person</th>
+            <th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(2)')">Application Name<i class="fa fa-sort"></i></th>
+            <th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(3)')">Product ID<i class="fa fa-sort"></i></th>
+            <th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(4)')">Team Name<i class="fa fa-sort"></i></th>
+            <th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(5)')">No. of Days in S3 Standard<i class="fa fa-sort"></i></th>
+			<th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(6)')">Total Archive Retention (S3 + Glacier)<i class="fa fa-sort"></i></th>
         </tr>
 
         {% for item in value %}
