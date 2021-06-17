@@ -10,7 +10,7 @@
 
         <body style="background-image: url('/static/bg4.jpg');background-size: 100%;" >
 
-        <form action="/addemp" autocomplete="on" method="POST" enctype="multipart/form-data">
+        <form action="/addarch" autocomplete="on" method="POST" enctype="multipart/form-data">
 
 <!--              <form autocomplete="on" method="POST" enctype="multipart/form-data">-->
 
@@ -19,19 +19,16 @@
 
             Name of the Application:<br> <input style="height:25px;font-size:14pt;" type="text" name="app_name"><br><br>
 			
-			Product ID as in Master Database:<br> <input style="height:25px;font-size:14pt;" type="number" name="product_id"><br><br>
+			Product ID (As in Master Database):<br> <input style="height:25px;font-size:14pt;" type="number" name="product_id"><br><br>
 
             <label for="teams">Team Name of Requestor:</label><br>
 
             <select style="height:25px;font-size:14pt;" name="team_name" id="teams">
                 <option value="">--Select--</option>
-                <option value="MIS IPT">MIS Backup & Storage</option>
-				<option value="MIS UNIX">MIS Unix</option>
+                <option value="MIS Backup & Storage">MIS Backup & Storage</option>
+				<option value="MIS Unix">MIS Unix</option>
 				<option value="MIS Wintel">MIS Wintel</option>
                 <option value="MIS Messaging">MIS Messaging</option>
-                <option value="IT SOM">IT SOM</option>
-                <option value="MIS Network">MIS Network</option>
-                <option value="MIS VOIP">MIS VoIP</option>
             </select><br><br>
 
             How long until objects are transitioned to Glacier (In Days):<br> <input style="height:25px;font-size:14pt;" type="number" name="daysin_std_s3"><br><br>
