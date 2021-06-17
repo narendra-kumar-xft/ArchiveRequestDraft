@@ -71,7 +71,7 @@ def addarch():
     product_id = request.form['product_id']
     team_name = request.form['team_name']
     daysin_std_s3 = request.form['daysin_std_s3']
-	retention_days = request.form['retention_days']
+    retention_days = request.form['retention_days']
 
     insert_sql = "INSERT INTO archives VALUES (%s, %s, %s, %s, %s, %s)"
     cursor = db_conn.cursor()
