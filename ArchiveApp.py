@@ -58,7 +58,7 @@ def showsummary():
 
 
 @app.route("/addarch", methods=['POST'])
-def AddArch():
+def addarch():
     db_conn = connections.Connection(
         host=customhost,
         port=3306,
